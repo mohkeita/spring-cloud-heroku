@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: account-service
+  data:
+    mongodb:
+      uri: ${MONGODB_URI}
+
+eureka:
+  instance:
+    hostname: ${HEROKU_APP_NAME}.herokuapp.com
+    non-secure-port: 80
+  client:
+    service-url:
+      defaultZone: http://mohkeita-discovery-service.herokuapp.com/eureka
