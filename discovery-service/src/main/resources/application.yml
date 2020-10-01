@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: discovery-service
+eureka:
+  instance:
+    hostname: mohkeita-discovery-service.herokuapp.com
+  client:
+    register-with-eureka: false
+    fetch-registry: false
